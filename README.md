@@ -115,18 +115,17 @@ Kerangka halaman disusun dengan elemen semantik HTML5:
 ### Langkah 3: CSS dasar dan header
 Ditambahkan import Google Font *Open Sans*, reset CSS (`* { margin: 0; padding: 0; }`), gaya `body`, `#container` (lebar 980px, `margin: 0 auto` agar di tengah, dengan `box-shadow`), serta gaya `header`.
 
-
-
+<img width="638" height="357" alt="Screenshot 2026-10-18 215922" src="https://github.com/user-attachments/assets/23c753ca-b3c4-4013-9f88-26d220aa84ee" />
 
 ### Langkah 4: Navigasi
 `nav` diberi latar biru. Tautan `nav a` dibuat `display: inline-block` dengan padding sehingga tampil mendatar, dan `nav a.active, nav a:hover` diberi warna lebih terang.
 
-
+<img width="637" height="356" alt="Screenshot 2026-10-18 220423" src="https://github.com/user-attachments/assets/71ee36d0-b0ef-4155-8379-9faf00e34194" />
 
 ### Langkah 5: Hero Panel
 Ditambahkan `<section id="hero">` berisi judul, paragraf, dan tombol *Learn more*. CSS memberi latar abu-abu, padding, serta ukuran font.
 
-
+<img width="638" height="358" alt="Screenshot 2026-10-18 221126" src="https://github.com/user-attachments/assets/8593ce8d-f626-4d07-82e5-9f7aaf21a9a7" />
 
 ### Langkah 6: Layout Main dan Sidebar
 `#main` (lebar 640px) dan `#sidebar` (lebar 260px) sama-sama diberi `float: left` sehingga tampil berdampingan. Total lebar 640 + 260 + padding 2 x (20 + 20) = 980px, sama dengan lebar container.
@@ -134,21 +133,22 @@ Ditambahkan `<section id="hero">` berisi judul, paragraf, dan tombol *Learn more
 ### Langkah 7: Sidebar Widget
 Ditambahkan dua `div.widget-box` di dalam `<aside>`: satu berisi daftar link, satu berisi teks. CSS memberi border, judul berlatar biru, dan efek hover pada tiap link.
 
+<img width="634" height="355" alt="Screenshot 2026-10-18 222050" src="https://github.com/user-attachments/assets/d8641ad3-f4dd-498b-bec7-53c8038230f6" />
 
 ### Langkah 8: Footer
 `footer` diberi `clear: both` agar berada di bawah elemen float (main dan sidebar), lengkap dengan latar gelap dan teks terang.
 
-![Footer](screenshots/09_footer.png)
+<img width="638" height="359" alt="Screenshot 2026-10-18 222316" src="https://github.com/user-attachments/assets/b4aa87ab-8236-42e1-8be5-289552824eef" />
 
 ### Langkah 9: Elemen pada Main Content
 Di `#main` ditambahkan `div.row` berisi tiga `div.box` (gambar bulat, heading, deskripsi, tombol *View detail*). Setiap `.box` memakai `width: 33.333333%` dan `float: left` agar membentuk tiga kolom. Pseudo-element `.row:after { clear: both; }` (teknik **clearfix**) menjaga agar tinggi `.row` tetap mengikuti isinya.
 
-![Content](screenshots/10_content.png)
+<img width="635" height="356" alt="Screenshot 2026-10-18 223735" src="https://github.com/user-attachments/assets/502d63cf-8b88-4afc-a9af-caed310fcc3f" />
 
 ### Langkah 10: Content Artikel
 Ditambahkan dua `<article class="entry">`, dipisahkan `<hr class="divider">`. Gambar pada artikel pertama float kiri, sedangkan artikel kedua memakai class `right-img` agar gambar float kanan.
 
-![Artikel](screenshots/11_artikel.png)
+<img width="638" height="356" alt="Screenshot 2026-10-18 224640" src="https://github.com/user-attachments/assets/43680b68-39c5-470e-9e6e-b1899fac7d5c" />
 
 ### Catatan perbaikan kode modul
 - Pada modul, HTML memakai `class="rightimg"` sedangkan CSS memakai `.right-img`, sehingga tidak cocok. Pada kode ini dipakai `right-img` di keduanya.
@@ -167,7 +167,8 @@ Halaman *single layout* dengan struktur yang sama (header, nav, hero, main, side
 
 Menu **About** diberi `class="active"` pada navigasi.
 
-![About](screenshots/12_about.png)
+<img width="638" height="351" alt="Screenshot 2026-10-18 224950" src="https://github.com/user-attachments/assets/aec317c8-36ce-4732-b96d-75305b5cedac" />
+<img width="639" height="359" alt="Screenshot 2026-10-18 224959" src="https://github.com/user-attachments/assets/8e650583-8390-4331-a066-fe8b12c69ba1" />
 
 ### Tugas 2 - Layout menu Contact (`kontak.html`)
 Halaman berisi formulir dengan field:
@@ -178,14 +179,16 @@ Halaman berisi formulir dengan field:
 
 Field diberi atribut `required` untuk validasi dasar dan `label` dengan `for` yang terhubung ke `id` input. Sidebar berisi info kontak.
 
-![Kontak](screenshots/13_kontak.png)
+<img width="638" height="359" alt="Screenshot 2026-10-18 225122" src="https://github.com/user-attachments/assets/3935879c-81da-41fc-b87d-d31980ab637f" />
+<img width="638" height="358" alt="Screenshot 2026-10-18 225130" src="https://github.com/user-attachments/assets/9748755d-7af5-4e69-9ddd-69ec0ad709c8" />
 
 ---
 
 ## Validasi
 Seluruh dokumen HTML diperiksa melalui <http://validator.w3.org>.
 
-![Validasi](screenshots/14_validasi.png)
+<img width="1365" height="767" alt="WhatsApp Image 2026-10-18 at 22 52 08" src="https://github.com/user-attachments/assets/49abc7c5-c1f7-4ea8-bd72-d8136295a719" />
+<img width="1364" height="767" alt="WhatsApp Image 2026-10-18 at 22 52 07" src="https://github.com/user-attachments/assets/733edcf2-8c2e-499e-a6c6-7f00504584f9" />
 
 ## Cara Menjalankan
 1. Buka folder `Lab4Web` di VSCode.
