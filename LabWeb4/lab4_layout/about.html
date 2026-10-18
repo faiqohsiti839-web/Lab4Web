@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Layout Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Layout Sederhana</h1>
+        </header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="artikel.html">Artikel</a>
+            <a href="about.html" class="active">About</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+        <section id="hero">
+            <h1>About</h1>
+            <p>Mengenal lebih dekat penulis website ini: deskripsi singkat, keahlian, dan portfolio.</p>
+        </section>
+        <section id="wrapper">
+            <section id="main">
+                <article class="entry profile">
+                    <h2>Deskripsi</h2>
+                    <img src="https://dummyimage.com/150/1f5faa/fff.png&text=Foto" alt="Foto profil" class="image-circle">
+                    <p><strong>Siti Faiqoh Almarufi</strong> - mahasiswa Teknik Informatika, Fakultas Teknik, Universitas Pelita Bangsa (NIM 312510168).</p>
+                    <p>Website ini dibuat sebagai latihan Praktikum 4 Pemrograman Web untuk memahami box element, CSS float, dan semantic element HTML5 dalam membuat layout web sederhana.</p>
+                </article>
+                <hr class="divider" />
+                <h2>Keahlian</h2>
+                <ul class="skill-list">
+                    <li>HTML5 &amp; semantic element</li>
+                    <li>CSS layout (box model, float, clearfix)</li>
+                    <li>Dasar pemrograman (Java, Python, SQL)</li>
+                    <li>Git &amp; GitHub</li>
+                </ul>
+                <hr class="divider" />
+                <h2>Portfolio</h2>
+                <div class="row">
+                    <div class="box portfolio-item">
+                        <img src="https://dummyimage.com/300x200/db7d25/fff.png&text=Lab2Web" alt="Lab2Web">
+                        <h3>Lab2Web</h3>
+                        <p>HTML lanjutan: proyek Biodata Mahasiswa.</p>
+                    </div>
+                    <div class="box portfolio-item">
+                        <img src="https://dummyimage.com/300x200/3e73e6/fff.png&text=Lab3Web" alt="Lab3Web">
+                        <h3>Lab3Web</h3>
+                        <p>CSS dasar: selector, warna, dan tipografi.</p>
+                    </div>
+                    <div class="box portfolio-item">
+                        <img src="https://dummyimage.com/300x200/71e6d4/fff.png&text=Lab4Web" alt="Lab4Web">
+                        <h3>Lab4Web</h3>
+                        <p>CSS layout: header, nav, main, sidebar, footer.</p>
+                    </div>
+                </div>
+            </section>
+            <aside id="sidebar">
+                <div class="widget-box">
+                    <h3 class="title">Menu Cepat</h3>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="artikel.html">Artikel</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="widget-box">
+                    <h3 class="title">Widget Text</h3>
+                    <p>Vestibulum lorem elit, iaculis in nisl volutpat, malesuada tincidunt arcu. Proin in leo fringilla, vestibulum mi porta, faucibus felis.</p>
+                </div>
+            </aside>
+        </section>
+        <footer>
+            <p>&copy; 2021 - Universitas Pelita Bangsa</p>
+        </footer>
+    </div>
+</body>
+</html>
